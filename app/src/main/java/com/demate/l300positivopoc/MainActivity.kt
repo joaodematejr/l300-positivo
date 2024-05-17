@@ -56,6 +56,11 @@ fun AppContent(name: String, modifier: Modifier = Modifier, viewModelPositivo: V
         }) {
             Text("Init Context")
         }
+        Button(onClick = {
+            viewModelPositivo.handlePrint(context)
+        }) {
+            Text("Print")
+        }
     }
 }
 
